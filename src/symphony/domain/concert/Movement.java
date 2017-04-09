@@ -1,5 +1,10 @@
 package symphony.domain.concert;
 
+import java.util.ArrayList;
+
+import symphony.domain.Name;
+import symphony.domain.people.Soloist;
+
 /**
 * CST8288
 * Professor: Reg Dyer
@@ -17,9 +22,13 @@ package symphony.domain.concert;
 * // TODO
 * Class Info
 * 
-* @author Bryan Flood McAuley
+* @author Joel Schmuland
 * @version 1.0 April 6, 2017
 */
-public class Movement {
-
+public class Movement extends Name{
+	private long COUNTER;
+	private ArrayList<Movement> movement;
+	private String composer;
+	private ArrayList<Soloist> soloest;
+//TODO finish this class
 }

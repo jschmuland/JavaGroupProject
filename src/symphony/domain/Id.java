@@ -20,7 +20,17 @@ package symphony.domain;
 * @author Bryan Flood McAuley
 * @version 1.0 April 6, 2017
 */
-public class Id {
+public abstract class Id {
+	private String id;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+	
 
 }
 //just checking Git stuff

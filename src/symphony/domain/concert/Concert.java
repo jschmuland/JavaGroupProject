@@ -71,6 +71,22 @@ public class Concert {
 		performance = builder.performance;
 		date 		= builder.date;
 	}//end of constructor
+
+	public Venue getVenue() {
+		return venue;
+	}
+
+	public Conductor getConductor() {
+		return conductor;
+	}
+
+	public ArrayList<Composition> getPerformance() {
+		return performance;
+	}
+
+	public Date getDate() {
+		return date;
+	}
 	
 	
 

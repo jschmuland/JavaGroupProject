@@ -1,5 +1,10 @@
 package symphony.domain.concert;
 
+import java.util.ArrayList;
+
+import symphony.domain.Name;
+import symphony.domain.people.Soloist;
+
 /**
 * CST8288
 * Professor: Reg Dyer
@@ -20,6 +25,31 @@ package symphony.domain.concert;
 * @author Bryan Flood McAuley
 * @version 1.0 April 6, 2017
 */
-public class Composition {
+public class Composition extends Name{
+	private long COUNTER;/// what is the counter for.
+	private ArrayList<Movement> movement;
+	private ArrayList<Soloist> soloest;
+	private String composer;
+	
+	public void addMovement(Movement val) {
+		movement.add(val);
+	}
 
+	public String getComposer() {
+		return composer;
+	}
+
+	public void setComposer(String composer) {
+		this.composer = composer;
+	}
+
+	public ArrayList<Soloist> getSoloest() {
+		return soloest;
+	}
+
+	public void setSoloest(Soloist soloest) {
+		this.soloest.add(soloest);
+	}
+	
+	
 }

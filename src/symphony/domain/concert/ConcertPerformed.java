@@ -1,9 +1,6 @@
 package symphony.domain.concert;
 
-import java.util.ArrayList;
-
-import symphony.domain.NameID;
-import symphony.domain.people.Soloist;
+import symphony.domain.Date;
 
 /**
 * CST8288
@@ -25,9 +22,31 @@ import symphony.domain.people.Soloist;
 * @author Joel Schmuland
 * @version 1.0 April 6, 2017
 */
-public class Movement extends NameID{
-	private ArrayList<Movement> movement;
-	private String composer;
-	private ArrayList<Soloist> soloest;
-//TODO finish this class
+public class ConcertPerformed {
+	private Concert concert;
+	private Date date;
+	
+	public ConcertPerformed(Concert val) {
+		this(val,new Date());
+	}
+	
+	public ConcertPerformed(Concert val, Date dateVal) {
+		this.setConcert(val);
+		this.setDate(dateVal);
+	}
+	
+	public Concert getConcert() {
+		return concert;
+	}
+	public void setConcert(Concert concert) {
+		this.concert = concert;
+	}
+	public Date getDate() {
+		return date;
+	}
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+
 }

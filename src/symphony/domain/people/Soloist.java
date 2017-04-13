@@ -1,5 +1,7 @@
 package symphony.domain.people;
 
-public class Soloist {
+import symphony.domain.*;
+
+public class Soloist extends NameID {
 
 }

@@ -2,7 +2,7 @@ package symphony.domain.concert;
 
 import java.util.ArrayList;
 
-import symphony.domain.Name;
+import symphony.domain.NameID;
 import symphony.domain.people.Soloist;
 
 /**
@@ -22,11 +22,10 @@ import symphony.domain.people.Soloist;
 * // TODO
 * Class Info
 * 
-* @author Bryan Flood McAuley
+* @author Joel Schmuland
 * @version 1.0 April 6, 2017
 */
-public class Composition extends Name{
-	private long COUNTER;/// what is the counter for.
+public class Composition extends NameID{
 	private ArrayList<Movement> movement;
 	private ArrayList<Soloist> soloest;
 	private String composer;

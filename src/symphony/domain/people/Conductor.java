@@ -1,5 +1,7 @@
 package symphony.domain.people;
 
+import symphony.domain.NameID;
+
 /**
 * CST8288
 * Professor: Reg Dyer
@@ -20,6 +22,6 @@ package symphony.domain.people;
 * @author Bryan Flood McAuley
 * @version 1.0 April 6, 2017
 */
-public class Conductor {
+public class Conductor extends NameID {
 
 }
